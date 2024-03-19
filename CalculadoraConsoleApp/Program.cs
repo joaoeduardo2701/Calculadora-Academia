@@ -24,7 +24,6 @@ internal class Program
         }
     }
 
-
     static int MostrarMenu()
     {
         Console.Clear();
@@ -56,17 +55,20 @@ internal class Program
 
         return opcaoValida;
     }
+
     static void MensagemDeErro()
     {
         Console.WriteLine("Por favor digite uma opção válida!!!");
         Console.WriteLine("Digite qualquer tecla para continuar... ");
         Console.ReadKey();
     }
+
     private static double ObterValorNumerico(string texto)
     {
         Console.WriteLine(texto);
         return double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
     }
+
     private static void RealizarCalculo(int operacao)
     {
         double primeironumero = ObterValorNumerico("Digite o primeiro número: ");
@@ -104,8 +106,6 @@ internal class Program
         }
 
         MostrarResultados(resultado);
-
-
     }
 
     static void MostrarResultados(double resultado)
