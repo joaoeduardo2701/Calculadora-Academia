@@ -92,8 +92,6 @@ internal class Program
                 {
                     Console.WriteLine("Não é possível dividir um número por zero");
                     Console.WriteLine("Digite qualquer tecla para continuar...");
-                    Console.ReadKey();
-                    //continue;
                 }
                 else
                 {
